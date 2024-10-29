@@ -1,0 +1,4 @@
+$(function(){
+    $('.dragarea')._upload({
+    });
+});
