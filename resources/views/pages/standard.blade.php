@@ -9,11 +9,21 @@
 
 @section('keywords', '食肉格付とは,牛肉,豚肉,格付,日本食肉格付協会,JMGA,公益社団法人')
 
-@section('pankz', '食肉格付とは')
-
 @section('sub_title', '- standard -')
 
+@section('breadcrumb')
+
+    <div class="m-breadcrumb">
+        <ol class="topicPath">
+            <li><a href="./../../index.html">ホーム</a></li>
+            <li>食肉格付とは</li>
+        </ol>
+    </div>
+
+@endsection
+
 @section('content')
+
     <div class="l-section_white">
         <div class="l-h2Head">
             <h2 class="titleSection">格付の役割</h2>
@@ -45,6 +55,7 @@
             </ul>
         </div>
     </div>
+
     <div class="l-section_white">
         <div class="l-h2Head">
             <h2 class="titleSection">取引規格</h2>
@@ -112,4 +123,5 @@
             <p class="oblongButton mT10"><a href="/service/#beefPamph-englishVersion">英訳版パンフレットの有料配布</a></p>
         </div>
     </div>
+
 @endsection

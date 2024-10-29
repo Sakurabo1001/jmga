@@ -9,11 +9,21 @@
 
 @section('keywords', '事業内容,牛肉,豚肉,格付,日本食肉格付協会,JMGA,公益社団法人')
 
-@section('pankz', '事業内容')
-
 @section('sub_title', '- service -')
 
+@section('breadcrumb')
+
+    <div class="m-breadcrumb">
+        <ol class="topicPath">
+            <li><a href="./../../index.html">ホーム</a></li>
+            <li>事業内容</li>
+        </ol>
+    </div>
+
+@endsection
+
 @section('content')
+
     <div class="l-localnavi">
         <div id="m-localnavi">
             <ul>
@@ -96,7 +106,6 @@
                     </dl>
                 </div>
             </div>
-
         </div>
     </div>
 

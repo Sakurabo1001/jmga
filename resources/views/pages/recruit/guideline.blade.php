@@ -9,12 +9,24 @@
 
 @section('keywords', '募集,要項,採用,情報,牛肉,豚肉,格付,日本食肉格付協会,JMGA,公益社団法人')
 
-@section('pankz', '令和7年度募集要項')
-
 @section('sub_title', '- recruit guideline -')
+
+@section('breadcrumb')
+
+    <div class="m-breadcrumb">
+        <ol class="topicPath">
+            <li><a href="./../../index.html">ホーム</a></li>
+            <li><a href="/recruit">採用情報</a></li>
+            <li>令和7年度募集要項</li>
+        </ol>
+    </div>
+
+@endsection
+
 @section('content')
+
     <div class="l-section_white">
-        <p class="message--large-txt">令和７年度 公益社団法人日本食肉格付協会新規職員募集要項</p>
+        <p class="message--large-txt">令和７年度 公益社団法人日本食肉格付協会新規職員２次募集要項</p>
         <div class="l-h2Head">
             <h2 class="titleSection">1.採用条件</h2>
         </div>
@@ -30,7 +42,7 @@
                 <tr>
                     <td>募集人員</td>
                     <td>
-                        <p>１５名程度</p>
+                        <p>５名程度</p>
                     </td>
                 </tr>
                 <tr>
@@ -40,7 +52,7 @@
                             <li>&#9312;&nbsp; 国内の短期大学（農業大学校等含む）以上の学部・学科（大学院含む）を問わず、令和７年３月に卒業（修了）見込みである方（日本国籍を有する。）</li>
                             <li>&#9313;&nbsp;食肉を格付規程に則り、脂肪交雑、肉色及び脂肪色等を客観的に判定する職種であるため、心身ともに健康である方</li>
                             <li>&#9314;&nbsp;当協会が指定する全国いずれの事業所にも勤務可能な方</li>
-                            <li>&#9315;&nbsp;要普通自動車免許（入会日までに取得でも可）</li>
+                            <li>&#9315;&nbsp;要普通自動車免許</li>
                         </ul>
                     </td>
                 </tr>
@@ -134,7 +146,7 @@
                 <tr>
                     <td>受付期間</td>
                     <td>
-                        <p><span>令和６年４月１５日（月）～６月１４日（金）　※必着</span></p>
+                        <p><span>令和６年１０月１日（火）～令和７年１月１０日（金）　※必着</span></p>
                     </td>
                 </tr>
                 <tr>
@@ -167,7 +179,7 @@
                             <li>
                                 <dl class="clearfix">
                                     <dt>&#9312;&nbsp;日時</dt>
-                                    <dd><span>令和６年６月２１日（金）１０時から</span></dd>
+                                    <dd><span>令和６年１０月下旬から令和７年１月中旬の間で実施予定</span></dd>
                                 </dl>
                             </li>
                             <li>
@@ -202,8 +214,9 @@
                             <li>&#9312;&nbsp;当協会の詳しい御案内については、当協会ＨＰ（http://www.jmga.or.jp/）を御覧ください。</li>
                             <li>&#9313;&nbsp;応募に当たっては、当協会の業務内容の理解のため、予め、最寄りの事業所を訪問していただくことになりますので、希望する日時等について、総務部まで御連絡願います。<br>
                                 電話　０３－３２５７－０２２０<br>
-                                <span>※ 協会訪問及び照会の期間：：令和６年４月１日（月）～６月 ７日（金）</span></li>
-                            <li>&#9314;&nbsp;御質問等がありましたら電話又は担当者のメール（saiyo@jmga.or.jp）までお問い合わせください。</li>
+                                <span>※ 協会訪問及び照会の期間：：令和６年１０月１日（火）～令和７年１月１０日（金）</span></li>
+                            <li>&#9314;&nbsp;オンライン（Zoom開催）による企業説明会を随時実施しますのでお問い合わせください。</li>
+                            <li>&#9315;&nbsp;御質問等がありましたら電話又は担当者のメール（saiyo@jmga.or.jp）までお問い合わせください。</li>
                         </ul>
                     </td>
                 </tr>
@@ -214,4 +227,5 @@
             </ul>
         </div>
     </div>
+
 @endsection

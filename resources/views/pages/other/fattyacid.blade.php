@@ -11,7 +11,19 @@
 
 @section('pankz', '豚枝肉の脂肪酸測定について')
 
+@section('breadcrumb')
+
+    <div class="m-breadcrumb">
+        <ol class="topicPath">
+            <li><a href="./../../index.html">ホーム</a></li>
+            <li>豚枝肉の脂肪酸測定について</li>
+        </ol>
+    </div>
+
+@endsection
+
 @section('content')
+
     <div class="l-section_white">
         <div class="l-h2Head">
             <h2 class="titleSection">豚枝肉の脂肪酸測定について</h2>
@@ -25,4 +37,5 @@
             </ul>
         </div>
     </div>
+
 @endsection

@@ -1,4 +1,3 @@
-
 {{--利用規約ページ--}}
 
 @extends('layouts.base')
@@ -9,11 +8,21 @@
 
 @section('keywords', '利用規約,牛肉,豚肉,格付,日本食肉格付協会,JMGA,公益社団法人')
 
-@section('pankz', '利用規約')
-
 @section('sub_title', '- terms -')
 
+@section('breadcrumb')
+
+    <div class="m-breadcrumb">
+        <ol class="topicPath">
+            <li><a href="./../../index.html">ホーム</a></li>
+            <li>利用規約</li>
+        </ol>
+    </div>
+
+@endsection
+
 @section('content')
+
     <div class="l-section_white">
         <div class="l-h2Head">
             <h2 class="titleSection">当ホームページへのリンクの掲載及び画像等の引用に当たっての注意事項</h2>
@@ -32,14 +41,22 @@
             <div class="l-h3Body">
                 <div class="l-h4Body">
                     <ul class="m-section-list">
-                        <li>（1）当Webサイトへのリンクは、リンク先が公益社団法人日本食肉格付協会であることを明記して、できるだけ<a href="/">http://www.jmga.or.jp/</a>（トップページ）へリンクしてください。</li>
-                        <li>（2）やむを得ず、当Webサイト内の各Webページにリンクを張る場合は、そのWebページが公益社団法人日本食肉格付協会のWebサイト内にあることが分かるように、必ず明記してください。</li>
-                        <li>（3）当Webサイトのコンテンツは、予告なしに内容を変更又は削除する場合があります。<br>あらかじめご了承ください。</li>
-                        <li>（4）リンク設定を行う場合は、下記のリンク掲載届に記載の上、メールまたはFAXで送信をお願いします。</li>
+                        <li>（1）当Webサイトへのリンクは、リンク先が公益社団法人日本食肉格付協会であることを明記して、できるだけ<a
+                                href="/">http://www.jmga.or.jp/</a>（トップページ）へリンクしてください。
+                        </li>
+                        <li>
+                            （2）やむを得ず、当Webサイト内の各Webページにリンクを張る場合は、そのWebページが公益社団法人日本食肉格付協会のWebサイト内にあることが分かるように、必ず明記してください。
+                        </li>
+                        <li>（3）当Webサイトのコンテンツは、予告なしに内容を変更又は削除する場合があります。<br>あらかじめご了承ください。
+                        </li>
+                        <li>
+                            （4）リンク設定を行う場合は、下記のリンク掲載届に記載の上、メールまたはFAXで送信をお願いします。
+                        </li>
                     </ul>
                     <ul class="largeButton clearfix">
                         <li>
-                            <a style="text-indent: initial;" class="itemXls" href="/assets/commons/doc/link-application.xlsx">リンク掲載届（Excel版）</a>
+                            <a style="text-indent: initial;" class="itemXls"
+                               href="/assets/commons/doc/link-application.xlsx">リンク掲載届（Excel版）</a>
                         </li>
                     </ul>
                 </div>
@@ -53,4 +70,5 @@
             </div>
         </div>
     </div>
+
 @endsection

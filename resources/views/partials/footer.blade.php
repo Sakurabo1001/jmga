@@ -44,7 +44,7 @@
                 <ul>
                     <li><a href="/recruit/">採用情報</a></li>
                     <li><a href="/recruit/message/">トップメッセージ</a></li>
-                    <li><a href="/recruit/guideline/">募集要項</a></li>
+                    <li><a href="/recruit/guideline/">令和7年度募集要項</a></li>
                     <li><a href="/recruit/staff/">先輩職員の声</a></li>
                 </ul>
             </dd>
@@ -52,7 +52,6 @@
             <dt>その他</dt>
             <dd>
                 <ul>
-                    {{-- <li><a href="/qa/">格付Q&A</a></li> --}}
                     <li><a href="/other/internship/">インターンシップ</a></li>
                     <li><a href="/information/">お知らせ</a></li>
                     <li><a href="/privacy-policy/">個人情報保護方針</a></li>

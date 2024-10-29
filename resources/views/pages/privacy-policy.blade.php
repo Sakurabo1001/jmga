@@ -9,11 +9,21 @@
 
 @section('keywords', '個人情報,保護方針,牛肉,豚肉,格付,日本食肉格付協会,JMGA,公益社団法人')
 
-@section('pankz', '個人情報保護方針')
-
 @section('sub_title', '- privacy-policy -')
 
+@section('breadcrumb')
+
+    <div class="m-breadcrumb">
+        <ol class="topicPath">
+            <li><a href="./../../index.html">ホーム</a></li>
+            <li>個人情報保護方針</li>
+        </ol>
+    </div>
+
+@endsection
+
 @section('content')
+
     <div class="l-section_white">
         <div class="l-h2Head">
             <h2 class="titleSection">個人情報保護方針</h2>
@@ -131,7 +141,7 @@
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
+
 @endsection

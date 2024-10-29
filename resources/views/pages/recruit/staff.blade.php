@@ -9,11 +9,22 @@
 
 @section('keywords', '先輩職員の声,採用,募集,要項,情報,牛肉,豚肉,格付,日本食肉格付協会,JMGA,公益社団法人')
 
-@section('pankz', '先輩職員の声')
-
 @section('sub_title', '- recruit staff -')
 
+@section('breadcrumb')
+
+    <div class="m-breadcrumb">
+        <ol class="topicPath">
+            <li><a href="./../../index.html">ホーム</a></li>
+            <li><a href="/recruit">採用情報</a></li>
+            <li>先輩職員の声</li>
+        </ol>
+    </div>
+
+@endsection
+
 @section('content')
+
     <div class="l-section_white">
         <div class="l-h2Body">
             <ul class="m-staff-list clearfix">
@@ -86,4 +97,5 @@
             </ul>
         </div>
     </div>
+
 @endsection

@@ -9,11 +9,22 @@
 
 @section('keywords', 'トップメッセージ,採用,募集,要項,情報,牛肉,豚肉,格付,日本食肉格付協会,JMGA,公益社団法人')
 
-@section('pankz', 'トップメッセージ')
-
 @section('sub_title', '- recruit message -')
 
+@section('breadcrumb')
+
+    <div class="m-breadcrumb">
+        <ol class="topicPath">
+            <li><a href="./../../index.html">ホーム</a></li>
+            <li><a href="/recruit">採用情報</a></li>
+            <li>トップメッセージ</li>
+        </ol>
+    </div>
+
+@endsection
+
 @section('content')
+
     <div class="l-section_white">
         <p class="message--large-txt">牛・豚枝肉の公正中立な格付を通じて、<br>我が国の畜産・食肉産業の発展に貢献します！！</p>
         <div class="l-h2Head">
@@ -100,4 +111,5 @@
             </div>
         </div>
     </div>
+
 @endsection

@@ -13,7 +13,19 @@
 
 @section('sub_title', '- internship -')
 
+@section('breadcrumb')
+
+    <div class="m-breadcrumb">
+        <ol class="topicPath">
+            <li><a href="./../../index.html">ホーム</a></li>
+            <li>インターンシップ</li>
+        </ol>
+    </div>
+
+@endsection
+
 @section('content')
+
     <div class="l-section_white">
         <div class="l-h2Head">
             <h2 class="titleSection">公益社団法人日本食肉格付協会インターンシップについて</h2>
@@ -80,4 +92,5 @@
             </ul>
         </div>
     </div>
+
 @endsection

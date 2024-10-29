@@ -1,7 +1,6 @@
-
 {{--静的ページ　共通レイアウト--}}
 
-<!DOCTYPE HTML>
+    <!DOCTYPE HTML>
 <html>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -18,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/commons/css/slick-theme.css" media="screen,print"/>
 
     @if (request()->getHost() === 'www.jmga.or.jp')
+
         <!-- Google Analytics -->
         <script>
             (function (i, s, o, g, r, a, m) {
@@ -34,44 +34,44 @@
             ga('create', 'UA-80425226-1', 'auto');
             ga('send', 'pageview');
         </script>
+
     @endif
+
 </head>
 <body>
+
 <div class="bodyWrap">
+
     <!-- ヘッダー -->
     @include('partials.header')
 
     <!-- メインコンテンツ -->
-    <div>
-        <div class="l-breadcrumb">
-            <div class="m-breadcrumb">
-                <ol class="topicPath">
-                    <li><a href="./../../index.html">ホーム</a></li>
-                    <li>@yield('pankz')</li>
-                </ol>
-            </div>
-            <div class="l-topTitle">
-                <h1 class="topTitleSection">
+    <div class="l-breadcrumb">
 
-                    @yield('title')
+        @yield('breadcrumb')
 
+        <div class="l-topTitle">
+            <h1 class="topTitleSection">
 
-                    <div class="topTitleSection-university">
-                        @yield('university_name')
-                    </div>
+                @yield('title')
 
-                    <span>
+                <div class="topTitleSection-university">
 
-                        @yield('sub_title')
+                    @yield('university_name')
 
-                    </span>
-                </h1>
-            </div>
+                </div>
+
+                <span>
+
+                    @yield('sub_title')
+
+                </span>
+
+            </h1>
         </div>
-
-        @yield('content')
-
     </div>
+
+    @yield('content')
 
     <!-- フッター -->
     @include('partials.footer')
@@ -85,6 +85,6 @@
 <script src="/assets/commons/js/dropdowns.js"></script>
 <script src="/assets/commons/js/pagetop.js"></script>
 <script src="/assets/commons/js/addressAppend.js"></script>
-{{--{!! html_entity_decode($js, ENT_QUOTES, 'UTF-8') !!}--}}
+
 </body>
 </html>

@@ -9,11 +9,21 @@
 
 @section('keywords', 'サイトマップ,牛肉,豚肉,格付,日本食肉格付協会,JMGA,公益社団法人')
 
-@section('pankz', 'サイトマップ')
-
 @section('sub_title', '- sitemap -')
 
+@section('breadcrumb')
+
+    <div class="m-breadcrumb">
+        <ol class="topicPath">
+            <li><a href="./../../index.html">ホーム</a></li>
+            <li>サイトマップ</li>
+        </ol>
+    </div>
+
+@endsection
+
 @section('content')
+
     <div class="l-section_white clearfix">
         <div class="l-h2Head">
             <h2 class="titleSection">サイトマップ</h2>

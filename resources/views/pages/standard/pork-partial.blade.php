@@ -9,11 +9,22 @@
 
 @section('keywords', '食肉格付とは,牛肉,豚肉,格付,日本食肉格付協会,JMGA,公益社団法人')
 
-@section('pankz', '豚部分肉取引規格')
-
 @section('sub_title', '- standard pork-partial -')
 
+@section('breadcrumb')
+
+    <div class="m-breadcrumb">
+        <ol class="topicPath">
+            <li><a href="./../../index.html">ホーム</a></li>
+            <li><a href="/standard">食肉格付とは</a></li>
+            <li>豚部分肉取引規格</li>
+        </ol>
+    </div>
+
+@endsection
+
 @section('content')
+
     <div class="l-localnavi">
         <div id="m-localnavi">
             <ul>
@@ -314,4 +325,5 @@
             <li><a class="itemLink" href="/standard/beef-partial/">牛部分肉取引規格</a></li>
         </ul>
     </div>
+
 @endsection
