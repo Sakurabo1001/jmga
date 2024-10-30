@@ -9,8 +9,6 @@
 
 @section('keywords', '豚枝肉の脂肪酸測定について,牛肉,豚肉,格付,日本食肉格付協会,JMGA,公益社団法人')
 
-@section('pankz', '豚枝肉の脂肪酸測定について')
-
 @section('breadcrumb')
 
     <div class="m-breadcrumb">

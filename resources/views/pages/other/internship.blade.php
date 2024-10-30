@@ -9,8 +9,6 @@
 
 @section('keywords', 'インターンシップ,牛肉,豚肉,格付,日本食肉格付協会,JMGA,公益社団法人')
 
-@section('pankz', 'インターンシップ')
-
 @section('sub_title', '- internship -')
 
 @section('breadcrumb')
