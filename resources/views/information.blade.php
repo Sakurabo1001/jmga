@@ -30,10 +30,21 @@
         </div>
         <div class="l-h2Body">
             <dl class="m-listInformation">
-{{--                <?php foreach ($rs as $value) {  $infoFlg = $value['informationKbn'] == \My\Para::INFO_INFO ? true : false?>--}}
-{{--                <dt><span class="<?php echo $infoFlg ? 'm-listInformation-iconInformation' : 'm-listInformation-iconRating' ?>"><?php echo \My\Funcset::getInfoKbn($value['informationKbn']) ?></span><?php echo \My\Func::getWareki($value['publishDateF'],false) ?></dt>--}}
-{{--                <dd><a href="<?php echo $infoFlg ? '/information/entry/'.$value['informationCd'] : '/rating/'; ?>"><?php echo $value['title'] ?></a><?php echo html_entity_decode(\My\Funcset::getNewHtml($value['publishDateF']), ENT_QUOTES, 'UTF-8'); ?></dd>--}}
-{{--                <?php } ?>--}}
+
+                @foreach ($rsAll as $value)
+
+                    <dt>
+                            <span class="{{ $value->informationKbn === "1" ? 'm-listInformation-iconInformation' : 'm-listInformation-iconRating' }}">
+                                {{ getInfoKbn($value->informationKbn) }}
+                            </span>
+                        {{ convertToWareki($value->publishDateF) }}
+                    </dt>
+                    <dd>
+                        <a href="{{ $value->informationKbn === "1" ? '/information/entry/' . $value->informationCd : '/rating/' }}">{{ $value->title }}</a>
+                    </dd>
+
+                @endforeach
+
             </dl>
         </div>
     </div>

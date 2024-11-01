@@ -27,14 +27,13 @@
 
     <div class="l-section_white l-section-info l-section-last">
         <div class="l-h2Head">
-{{--            <h2 class="titleSection"><?php echo $rs[0]['title'] ?></h2>--}}
+            <h2 class="titleSection">{{ $information->title }}</h2>
         </div>
         <div class="l-h2Body">
-{{--            <p class="infoDate"><?php echo \My\Func::getWareki($rs[0]['publishDateF'],false) ?></p>--}}
+            <p class="infoDate">{{ convertToWareki($information->publishDateF) }}</p>
             <div class="l-h3Body">
-{{--                <p class="commentSection"><?php echo html_entity_decode(nl2br($rs[0]['body']), ENT_QUOTES, 'UTF-8'); ?></p>--}}
+                <p class="commentSection">{!! nl2br($information->body) !!}</p>
             </div>
-
         </div>
     </div>
 

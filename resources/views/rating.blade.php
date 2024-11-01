@@ -48,22 +48,23 @@
                     <li>品種区分は荷受機関の区分によります。</li>
                 </ul>
                 <div class="division-btm-area clearfix">
-{{--                    <?php if (isset($rs['beef_hinsh_month'])) { ?>--}}
-{{--                    <div class="division-btm-area-item">--}}
-{{--                        <ul>--}}
-{{--                            <li>--}}
-{{--                                <a class="export" href="/rating/download/<?php echo $rs['beef_hinsh_month']['ratingCd']; ?>">--}}
-{{--                                    <span class="list_title">最新月</span>--}}
-{{--                                    <span class="list_date"><?php echo $rs['beef_hinsh_month']['ratingNm'] ?></span>--}}
-{{--                                        <?php if ($rs['beef_hinsh_month']['teisei'] !== '') { ?>--}}
-{{--                                    <span class="Teisei"><?php echo $rs['beef_hinsh_month']['teisei']; ?></span>--}}
-{{--                                    <?php } ?>--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
-{{--                        <p class="update"><?php echo \My\Func::getWareki($rs['beef_hinsh_month']['publishDate'], false) ?>更新<?php echo html_entity_decode($rs['beef_hinsh_month']['new'], ENT_QUOTES, 'UTF-8'); ?></p>--}}
-{{--                    </div>--}}
-{{--                    <?php }if (isset($rs['beef_hinsh_nenji'])) { ?>--}}
+                    @if(isset($rs['beef_hinsh_month']))
+                        <div class="division-btm-area-item">
+                            <ul>
+                                <li>
+                                    <a href="/rating/download/{{ $rs['beef_hinsh_month']->ratingCd }}" class="export">
+                                        <span class="list_title">最新月</span>
+                                        <span class="list_date">{{ $rs['beef_hinsh_month']->ratingNm }}</span>
+                                        @if($rs['beef_hinsh_month']->teisei)
+                                            <span class="Teisei">{{ $rs['beef_hinsh_month']->teisei }}</span>
+                                        @endif
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="update">{{ convertToWareki($rs['beef_hinsh_month']->publishDate) }}更新</p>
+                        </div>
+                    @endif
+
                     <div class="division-btm-area-item">
                         <ul>
                             <li>

@@ -1,24 +1,21 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-// 静的ページ共通ルート
 use App\Http\Controllers\StaticPageController;
+use App\Http\Controllers\InformationController;
+use App\Http\Controllers\RatingController;
 
 // トップページのルート
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [InformationController::class, 'Index']);
 
 // お知らせページのルート
-Route::get('/information ', function () {
-    return view('information ');
-});
+Route::get('/information', [InformationController::class, 'Information']);
+
+// お知らせ詳細ージのルート
+Route::get('/information/entry/{informationCd}', [InformationController::class, 'detail']);
 
 // 格付結果情報ページのルート
-Route::get('/rating ', function () {
-    return view('rating ');
-});
+Route::get('/rating', [RatingController::class, 'rating'])->name('rating');
 
 
 // 静的ページ共通ルート

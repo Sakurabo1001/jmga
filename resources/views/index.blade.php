@@ -54,31 +54,35 @@
         <div class="l-h2Body">
 
             @if(!empty($rsFix))
-
                 <dl class="m-listInformation l-h2Head l-h2Head--block">
-
                     @foreach ($rsFix as $value)
-
-                        <dt><span class="{{ $value['informationKbn'] == 'info' ? 'm-listInformation-iconInformation' : 'm-listInformation-iconRating' }}">{{ $value['informationKbn'] }}</span>{{ $value['publishDateF'] }}</dt>
-                        <dd><a href="{{ $value['informationKbn'] == 'info' ? '/information/entry/' . $value['informationCd'] : '/rating/' }}">{{ $value['title'] }}</a></dd>
-
+                        <dt>
+                            <span class="{{ $value->informationKbn === "1" ? 'm-listInformation-iconInformation' : 'm-listInformation-iconRating' }}">
+                                {{ getInfoKbn($value->informationKbn) }}
+                            </span>
+                            {{ convertToWareki($value->publishDateF) }}
+                        </dt>
+                        <dd>
+                            <a href="{{ $value->informationKbn === "1" ? '/information/entry/' . $value->informationCd : '/rating/' }}">{{ $value->title }}</a>
+                        </dd>
                     @endforeach
                 </dl>
-
             @endif
 
             @if(!empty($rs))
-
                 <dl class="m-listInformation">
-
                     @foreach ($rs as $value)
-
-                        <dt><span class="{{ $value['informationKbn'] == 'info' ? 'm-listInformation-iconInformation' : 'm-listInformation-iconRating' }}">{{ $value['informationKbn'] }}</span>{{ $value['publishDateF'] }}</dt>
-                        <dd><a href="{{ $value['informationKbn'] == 'info' ? '/information/entry/' . $value['informationCd'] : '/rating/' }}">{{ $value['title'] }}</a></dd>
-
+                        <dt>
+                        <span class="{{ $value->informationKbn === "1" ? 'm-listInformation-iconInformation' : 'm-listInformation-iconRating' }}">
+                            {{ getInfoKbn($value->informationKbn) }}
+                        </span>
+                            {{ convertToWareki($value->publishDateF) }}
+                        </dt>
+                        <dd>
+                            <a href="{{ $value->informationKbn === "1" ? '/information/entry/' . $value->informationCd : '/rating/' }}">{{ $value->title }}</a>
+                        </dd>
                     @endforeach
                 </dl>
-
             @endif
 
         </div>
